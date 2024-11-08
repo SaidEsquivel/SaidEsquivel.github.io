@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platillos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Platillos</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="postres.html">Postres</a>
+      <a href="bebidas.html">Bebidas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="recetas-platillos">
+      <h2>Nuevas Recetas</h2>
+      <div class="receta">
+          <h3>Pavo a la hawaiana</h3>
+          <p class="ingredientes">Ingredientes: </p> 
+          <p> 1 taza de salsa de soya </p>
+          <p>1 taza de cátsup</p>
+          <p>1 taza de azúcar mascabado</p>
+          <p>1/4 tazas de jugo de piña, en almíbar</p>
+          <p>1/3 tazas de caldo de pollo</p>
+          <p>2 cucharaditas de jengibre, finamente picado</p>
+          <p>2 cucharaditas de ajo, finamente picado</p>
+          <p>1 paquete de Fajitas de Pavo Dos Familias</p>
+          <p>1 lata de piña en almíbar, en cubos</p>
+          <p>arroz blanco al gusto, al vapor</p>
+          <p>cilantro al gusto</p>
+      </p>
+          
+          <h2>instrucciones</h2>
+
+                <p>En un bowl, combina la salsa de soya, la cátsup, el azúcar mascabado, el almíbar de la piña, el caldo de pollo, el jengibre y el ajo.</p>
+		<p>Marina las Fajitas de Pavo Dos Familias con la mezcla anterior en refrigeración durante 20 minutos.</p>
+		<p>Calienta un poco de aceite en una sartén, añade la piña y las Fajitas de Pavo Dos Familias marinadas. Cocina por 15 minutos o hasta que estén bien cocidas y la marinada se espese.</p>
+		<p>Sirve el pavo a la hawaiana sobre arroz blanco al vapor y decora con cilantro. </p>
+
+            /**/
+    <h3>Spaghetti ala Boloñesa</h3>
+    <h2>ingredientes</h2>
+      <p>500 gr de Spaghetti La Moderna</p>
+<p>1 litro de puré condimentado de tomate</p>
+<p>400 gr de carne molida de res</p>
+<p>150 gr de tocino ahumado picado</p>
+<p>5 cucharadas de aceite de oliva</p>
+<p>½ cebolla picada</p>
+<p>1 zanahoria pelada y picada</p>
+<p>2 varitas de apio pelado y picado</p>
+<p>1 cucharada de albahaca seca</p>
+<p>Sal al gusto</p>
+<p>Queso Parmesano al gusto</p>
+
+        <h2>instrucciones</h2>
+
+        <p>En una cacerola, con flama suave, fríe en el aceite la cebolla, la zanahoria y el apio.</p>
+<p>Añade a los 10 minutos el tocino, deja cocer 5 minutos mas y añade la carne molida.</p>
+<p>En cuanto cambie de color la carne vierte el puré, la sal y la albahaca. Cuece por  20/25 minutos más.</p>
+<p>Mientras tanto, cuece la pasta de acuerdo a las instrucciones que indica el empaque y escurre.</p>
+<p>Sirve la pasta condimentando con la salsa y el queso parmesano, y disfruta. </p>
+
+
+      </div>
+      <!-- Las recetas adicionales se agregarán aquí -->
+  </section>
+
+  <section id="recetas-platillos">
+    <h2>Nuevas Recetas</h2>
+    
+    <!-- Formulario para agregar una receta -->
+    <form id="form-receta">
+        <input type="text" id="nombre" placeholder="Nombre de la receta" required><br><br>
+        <textarea id="ingredientes" placeholder="Ingredientes (separados por comas)" required></textarea><br><br>
+        <textarea id="pasos" placeholder="Pasos" required></textarea><br><br>
+        <button type="button" onclick="agregarReceta()">Agregar Receta</button>
+    </form>
+    
+    <!-- Contenedor donde se mostrarán las recetas -->
+    <div id="lista-recetas"></div>
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

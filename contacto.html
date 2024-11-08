@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="platillos.html">Platillos</a>
+      <a href="postres.html">Postres</a>
+      <a href="bebidas.html">Bebidas</a>
+    </nav>
+  </header>
+
+ 
+    <main>
+      <section id="datos-contacto">
+        <h2>Conéctate con nosotros</h2>
+        <p>¡Síguenos en redes sociales!</p>
+  
+        <!-- Sección de redes sociales -->
+        <div id="redes-sociales">
+          <!-- Enlace a Facebook -->
+          <a href="https://www.facebook.com/luissaid.esquivelizquierdo" target="_blank" aria-label="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icono-red">
+          </a>
+  
+          <!-- Enlace a WhatsApp -->
+          <a href="https://wa.me/5573656738" target="_blank" aria-label="WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icono-red">
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <main>
+    <section id="comentarios">
+      <h2>Deja un comentario</h2>
+      <textarea id="comentario" placeholder="Escribe tu comentario aquí"></textarea>
+      <button onclick="agregarComentario()">Enviar</button>
+      <div id="lista-comentarios">
+        <!-- Lista de comentarios generada dinámicamente -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

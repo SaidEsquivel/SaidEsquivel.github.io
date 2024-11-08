@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platillos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Postres</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="postres.html">Postres</a>
+      <a href="bebidas.html">Bebidas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="recetas-postres">
+      <h2>Nuevas Recetas</h2>
+      <div class="receta">
+          <h3>Pastel Imposible de Moka</h3>
+          <p class="ingredientes">Ingredientes: </p> 
+          <p>1 Taza de cajeta
+            <p>1 Lata de Leche Evaporada</p>
+            <p> 3 Huevos</p>
+            <p> 1 Taza de aceite vegetal</p>
+            <p> 1 Paquete de harina para preparar pastel de chocolate (232 g)</p>
+            <p> 3 Cucharadas de Café soluble</p>
+            <p>1 Lata de Leche Condensada</p>
+            <p> 1 Lata de Leche Evaporada</p>
+            <p>5 Huevos</p> 
+            <p> 3 Cucharadas de esencia de nuez</p>
+            <p> 1 Taza de fresa desinfectadas y cortadas en cuartos</p>
+            <p>1/4 De taza de nuez picada</p>
+
+            <h2>instrucciones</h2>
+
+            <p> 1.Horno precalentado a 180 °C</p>
+
+           <p>2.Cubre el fondo y las paredes de un molde redondo, engrasado y enharinado con la cajeta. 
+            Licúa 1 lata de Leche Evaporada  con los 3 huevos, el aceite de maíz, la harina para preparar pastel sabor chocolate y el Café Soluble  hasta integrar por completo.Integra</p>
+
+            <p>3. Para el flan, licúa la Leche Condensadacon 1 lata de Leche Evaporada, 5 huevos y la esencia de nuez.Hornea</p>
+
+            <p>4.Vacía en el molde la mezcla del pastel de chocolate, con ayuda de una cuchara vierte poco a poco la mezcla del flan. Cubre el molde con papel aluminio y hornea a 180 °C a baño María durante 1 ½ horas. 
+              Deja enfriar, desmolda y refrigera por lo menos 1 hora; decora con las fresas y la nuez. Ofrece.</p>
+
+
+
+        </div>
+      <!-- Las recetas adicionales se agregarán aquí -->
+  </section>
+
+
+  <main>
+    <section id="recetas-postres">
+      <h2>Recetas de Postres</h2>
+      <div id="lista-postres">
+        <!-- Lista de platillos se carga dinámicamente aquí -->
+      </div>
+      <button onclick="agregarReceta('postres')">Agregar Postres</button>
+    </section>
+    
+    <section id="recetas-postres">
+      <h2>Nuevas Recetas de Postres</h2>
+      
+      <!-- Formulario para agregar un postre -->
+      <form id="form-postre">
+          <input type="text" id="nombre-postre" placeholder="Nombre del postre" required><br><br>
+          <textarea id="ingredientes-postre" placeholder="Ingredientes (separados por comas)" required></textarea><br><br>
+          <textarea id="pasos-postre" placeholder="Pasos" required></textarea><br><br>
+          <button type="button" onclick="agregarPostre()">Agregar Postre</button>
+      </form>
+      
+      <!-- Contenedor para las recetas de postres -->
+      <div id="lista-postres"></div>
+  </section>
+  </main>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platillos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bebidas</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="postres.html">Postres</a>
+      <a href="bebidas.html">Bebidas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+
+  <main>
+  <section id="recetas-bebidas">
+    <h2>Nuevas Recetas</h2>
+    <div class="receta">
+        <h3>Bloody Mary</h3>
+        <p class="ingredientes">Ingredientes: </p> 
+        <p> 1 cucharadita de Salsa Inglesa Gourmet</p>
+          <p> 1 cucharadita de salsa Tabasco</p>
+            <p> 1 cucharada de jugo de limón</p>
+              <p> 1/3 taza de vodka</p>
+                <p>  Pimienta Negra Molida Gruesa Gourmet a gusto</p>
+                  <p>Sal a gusto</p>
+                    <p>  4 cubos de hielo</p>
+                      <p> 1 ramita de apio para decorar (opcional)</p>
+                        <p> Rodajas de limón de pica para decorar (opcional) </p>
+        
+    </p>
+
+        <h2>instrucciones</h2>
+
+              <p>En una coctelera, mezclar el jugo de tomate con la Salsa Inglesa Gourmet, salsa Tabasco y jugo de limón. Agitar hasta mezclar bien. Agregar el vodka, Pimienta Negra Molida Gruesa Gourmet, sal y hielo y volver a agitar nuevamente.</p>
+                <p> Servir en un vaso largo  y decorar con una ramita de apio y una rodaja de limón de pica. </p>
+
+
+
+                <h3>Alexander</h3>
+                <p class="ingredientes">Ingredientes: </p> 
+                <p> 30 ml de coñac o brandy</p>
+                  <p> 30ml de crema de cacao</p>
+                    <p> 30 ml de nata liquida</p>
+                      
+            </p>
+      
+                <h2>instrucciones</h2>
+      
+                      <p> combinar todos los materiales</p>
+                        <p> Agitar y colar en un vaso frío de coctel </p>
+                        <p>Espolvorear nuez moscada o canela por encima.</p>
+                      </div>
+                      <!-- Las recetas adicionales se agregarán aquí -->
+                  </section>
+
+    <main>
+    <section id="recetas-bebidas">
+      <h2>Recetas de Bebidas</h2>
+      <div id="lista-bebidas">
+        <!-- Lista de platillos se carga dinámicamente aquí -->
+      </div>
+      <button onclick="agregarReceta('bebidas')">Agregar Bebidas</button>
+    </section>
+
+    <section id="recetas-bebidas">
+      <h2>Nuevas Recetas de Bebidas</h2>
+      
+      <!-- Formulario para agregar una bebida -->
+      <form id="form-bebida">
+          <input type="text" id="nombre-bebida" placeholder="Nombre de la bebida" required><br><br>
+          <textarea id="ingredientes-bebida" placeholder="Ingredientes (separados por comas)" required></textarea><br><br>
+          <textarea id="pasos-bebida" placeholder="Pasos" required></textarea><br><br>
+          <button type="button" onclick="agregarBebida()">Agregar Bebida</button>
+      </form>
+      
+      <!-- Contenedor para las recetas de bebidas -->
+      <div id="lista-bebidas"></div>
+  </section>
+  
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
